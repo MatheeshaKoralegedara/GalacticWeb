@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GalacticWeb — A futuristic web-app studio</title>
+  <meta name="description" content="GalacticWeb — A futuristic web-app studio building next-generation online experiences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Orbitron:wght@600;800&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <div class="stars"></div>
+
+  <header>
+    <div class="container header-inner">
+      <a href="#home" class="brand" aria-label="GalacticWeb home">
+        <div class="logo"><img src="image2.jpg" alt="GalacticWeb logo"></div>
+        <div class="brand-text">
+          <h1>GalacticWeb</h1>
+          <p>A futuristic web-app studio</p>
+        </div>
+      </a>
+
+      <div class="header-right">
+       
+
+        <div class="menu-toggle" id="menuToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></div>
+      </div>
+
+      <nav id="mainNav" class="nav">
+        <a class="nav-link ghost" href="#services">Services</a>
+        <a class="nav-link ghost" href="#projects">Portfolio</a>
+        <a class="nav-link ghost" href="#about">About</a>
+        <a class="cta" href="#contact">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left" data-aos="fade-right">
+          <span class="kicker">A futuristic web-app studio</span>
+          <h2>A futuristic web-app studio building <span class="highlight">next-generation online experiences</span></h2>
+          <p class="lead">We combine professional engineering and modern design to build scalable web apps, user-first interfaces, and reliable cloud deployments.</p>
+          <div class="hero-cta">
+            <a class="cta" href="#services">Get Started</a>
+            <a class="cta" href="#projects">View Portfolio</a>
+          </div>
+
+          
+        </div>
+
+        <div class="hero-right" data-aos="fade-left">
+          <div class="hero-logo-wrap">
+            <img src="image2.jpg" alt="GalacticWeb logo large" class="hero-logo">
+            <div class="hero-glow"></div>
+          </div>
+
+          <div class="floating-card small-metrics" aria-hidden>
+            <div class="card-3d">
+              <div class="card-inner">
+                <div class="metric"><div class="metric-value counter" data-target="na">0</div><div class="metric-label">Projects</div></div>
+                <div class="metric"><div class="metric-value counter" data-target="na">0</div><div class="metric-label">Satisfaction</div></div>
+                <div class="metric"><div class="metric-value counter" data-target="24">0</div><div class="metric-label">Support (hrs)</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" data-aos="fade-up">
+      <div class="container">
+        <div class="section-header"><h2 class="section-title">Services</h2><p class="section-subtitle">What we offer — end-to-end digital solutions</p></div>
+        <div class="grid">
+          <div class="card" data-aos="zoom-in"><div class="card-content"><div class="card-icon">💻</div><h3>Custom Web Apps</h3><p>Full-stack development with React, Spring Boot, and scalable databases.</p></div></div>
+          <div class="card" data-aos="zoom-in" data-aos-delay="80"><div class="card-content"><div class="card-icon">🎨</div><h3>UI/UX Design</h3><p>Wireframes, high-fidelity prototypes, and accessible interfaces.</p></div></div>
+          <div class="card" data-aos="zoom-in" data-aos-delay="160"><div class="card-content"><div class="card-icon">⚙️</div><h3>Deployment & Cloud</h3><p>CI/CD pipelines, cloud hosting (Vercel / AWS), monitoring and scaling.</p></div></div>
+          <div class="card" data-aos="zoom-in" data-aos-delay="240"><div class="card-content"><div class="card-icon">📈</div><h3>SEO & Performance</h3><p>Speed optimization, technical SEO, and analytics setup.</p></div></div>
+          <div class="card" data-aos="zoom-in" data-aos-delay="320"><div class="card-content"><div class="card-icon">🧭</div><h3>Brand & Strategy</h3><p>Logo, brand kit, and go-to-market web strategy for startups.</p></div></div>
+          <div class="card" data-aos="zoom-in" data-aos-delay="400"><div class="card-content"><div class="card-icon">🔧</div><h3>Maintenance</h3><p>Ongoing support, security updates, and feature development.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO (PLACEHOLDER) -->
+    <section id="projects" data-aos="fade-up">
+      <div class="container">
+        <div class="section-header"><h2 class="section-title">Portfolio</h2><p class="section-subtitle">GalacticWeb Our Successful Projects</p></div>
+        <div class="projects-grid">
+          <!-- Placeholder Project 1 -->
+          <div class="proj" data-aos="flip-left">
+            <div class="proj-img"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='700'><rect width='100%' height='100%' fill='%236C63FF'/><text x='50%' y='50%' fill='white' font-family='Poppins' font-size='40' text-anchor='middle' dominant-baseline='middle'>Project Placeholder 1</text></svg>" alt="Project 1"></div>
+            <div class="meta"><strong>Live Score Dashboard (Demo)</strong><p>Real-time dashboard handling WebSocket updates and analytics.</p></div>
+          </div>
+
+          <!-- Placeholder Project 2 -->
+          <div class="proj" data-aos="flip-left" data-aos-delay="80">
+            <div class="proj-img"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='700'><rect width='100%' height='100%' fill='%239B5DE5'/><text x='50%' y='50%' fill='white' font-family='Poppins' font-size='40' text-anchor='middle' dominant-baseline='middle'>Project Placeholder 2</text></svg>" alt="Project 2"></div>
+            <div class="meta"><strong>Hospital Management System (Demo)</strong><p>Secure patient records, scheduling, and billing modules.</p></div>
+          </div>
+
+          <!-- Placeholder Project 3 -->
+          <div class="proj" data-aos="flip-left" data-aos-delay="160">
+            <div class="proj-img"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='700'><rect width='100%' height='100%' fill='%230B0E2C'/><text x='50%' y='50%' fill='%23E6E6E6' font-family='Poppins' font-size='40' text-anchor='middle' dominant-baseline='middle'>Project Placeholder 3</text></svg>" alt="Project 3"></div>
+            <div class="meta"><strong>E-commerce Platform (Demo)</strong><p>Custom storefront and inventory management for merchants.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" data-aos="fade-up">
+      <div class="container">
+        <div class="section-header"><h2 class="section-title">About</h2><p class="section-subtitle">Who we are and why we build</p></div>
+        <div class="about-section about-content">
+          <div class="about-text">
+            <h3>We create the web, faster.</h3>
+            <p>GalacticWeb is a professional, tech-driven studio focused on building next-generation web apps. We combine strong engineering discipline and thoughtful design to deliver products that scale.</p>
+            <ul class="values">
+              <li><strong>Innovation</strong> — we use modern stacks and best practices.</li>
+              <li><strong>Quality</strong> — reliable code and polished UX.</li>
+              <li><strong>Integrity</strong> — transparent processes and timelines.</li>
+            </ul>
+          </div>
+
+          <div class="contact-form" id="contact">
+            <h4>Start a project</h4>
+            <p>Send a short brief and we'll reply within 48 hours.</p>
+            <form id="contactForm" novalidate>
+              <div class="form-group"><label for="cname">Name</label><input id="cname" name="name" required placeholder="Your full name"></div>
+              <div class="form-group"><label for="cemail">Email</label><input id="cemail" name="email" type="email" required placeholder="you@domain.com"></div>
+              <div class="form-group"><label for="cmsg">Message</label><textarea id="cmsg" name="message" required placeholder="Brief about project"></textarea></div>
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+
+            <div id="formSuccess" class="form-success" hidden>
+              <h4>Thanks — message sent!</h4>
+              <p>We'll get back within 48 hours. Meanwhile check our GitHub / LinkedIn.</p>
+              <button class="cta" id="formOk">OK</button>
+            </div>
+
+            <div class="contact-email">Or email: <a href="mailto:matheeshask7@gmail.com">galacticweb.dev@gmail.com</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container footer-grid">
+        <div class="footer-left">
+          <div class="footer-brand"><img src="image2.jpg" alt="GalacticWeb" class="footer-logo"><div><strong>GalacticWeb</strong><div class="muted">Building Digital Galaxies</div></div></div>
+        </div>
+
+        <div class="footer-right">
+          <div class="social-row">
+  <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+      <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0H12v2.2h.1c.6-1.1 2.2-2.2 4.5-2.2 4.8 0 5.7 3.2 5.7 7.4V24h-5v-7.2c0-1.7 0-3.8-2.4-3.8-2.4 0-2.8 1.8-2.8 3.6V24h-5V8z"/>
+    </svg>
+  </a>
+  <a href="https://github.com" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+      <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.17c-3.338.724-4.033-1.416-4.033-1.416-.547-1.387-1.337-1.757-1.337-1.757-1.092-.746.084-.731.084-.731 1.205.085 1.84 1.237 1.84 1.237 1.072 1.835 2.81 1.304 3.495.997.108-.776.42-1.305.763-1.604-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.47-2.381 1.236-3.221-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.47 11.47 0 013.003-.404 11.48 11.48 0 013.003.404c2.291-1.552 3.297-1.23 3.297-1.23.654 1.653.242 2.873.118 3.176.77.84 1.236 1.911 1.236 3.221 0 4.61-2.805 5.625-5.478 5.921.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+    </svg>
+  </a>
+  <a href="https://facebook.com" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+      <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24h11.495v-9.294H9.692V11.01h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.464.099 2.797.143v3.245l-1.92.001c-1.506 0-1.797.717-1.797 1.77v2.326h3.587l-.467 3.696h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.324V1.325C24 .593 23.407 0 22.675 0z"/>
+    </svg>
+  </a>
+  <a href="https://instagram.com" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.35 3.608 1.325.975.975 1.263 2.242 1.325 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.35 2.633-1.325 3.608-.975.975-2.242 1.263-3.608 1.325-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.35-3.608-1.325-.975-.975-1.263-2.242-1.325-3.608C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.062-1.366.35-2.633 1.325-3.608.975-.975 2.242-1.263 3.608-1.325C8.416 2.175 8.796 2.163 12 2.163zm0 1.534c-3.17 0-3.548.012-4.795.07-1.047.048-1.61.218-1.983.392-.5.242-.857.534-1.237.914-.38.38-.672.737-.914 1.237-.174.373-.344.936-.392 1.983-.058 1.247-.07 1.625-.07 4.795s.012 3.548.07 4.795c.048 1.047.218 1.61.392 1.983.242.5.534.857.914 1.237.38.38.737.672 1.237.914.373.174.936.344 1.983.392 1.247.058 1.625.07 4.795.07s3.548-.012 4.795-.07c1.047-.048 1.61-.218 1.983-.392.5-.242.857-.534 1.237-.914.38-.38.672-.737.914-1.237.174-.373.344-.936.392-1.983.058-1.247.07-1.625.07-4.795s-.012-3.548-.07-4.795c-.048-1.047-.218-1.61-.392-1.983a3.533 3.533 0 00-.914-1.237 3.533 3.533 0 00-1.237-.914c-.373-.174-.936-.344-1.983-.392-1.247-.058-1.625-.07-4.795-.07zm0 3.838a5.999 5.999 0 110 12 5.999 5.999 0 010-12zm0 9.9a3.9 3.9 0 100-7.8 3.9 3.9 0 000 7.8zm6.406-10.845a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/>
+    </svg>
+  </a>
+</div>
+
+      </div>
+
+      <div style="text-align:center;margin-top:18px;color:rgba(230,230,230,0.6);font-size:13px">© <span id="year"></span> All Right Reserved . GalacticWeb</div>
+    </footer>
+
+  </main>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

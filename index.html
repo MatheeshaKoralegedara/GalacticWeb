@@ -3,39 +3,66 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>GalacticWeb — A futuristic web-app studio</title>
-  <meta name="description" content="GalacticWeb — A futuristic web-app studio building next-generation online experiences." />
+
+  <title>GalacticWeb — Custom Web App Development Studio | React & Spring Boot</title>
+  <meta name="description" content="GalacticWeb designs and builds custom web applications — React front-ends, Spring Boot back-ends, and reliable cloud deployment — for businesses that need a scalable, production-ready product." />
+  <link rel="canonical" href="https://galacticweb.dev/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="GalacticWeb" />
+  <meta property="og:title" content="GalacticWeb — Custom Web App Development Studio" />
+  <meta property="og:description" content="Custom web applications, from React front-ends to Spring Boot back-ends and cloud deployment. Built to scale." />
+  <meta property="og:url" content="https://galacticweb.dev/" />
+  <meta property="og:image" content="https://galacticweb.dev/GW-icon.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="GalacticWeb — Custom Web App Development Studio" />
+  <meta name="twitter:description" content="Custom web applications, from React front-ends to Spring Boot back-ends and cloud deployment. Built to scale." />
+  <meta name="twitter:image" content="https://galacticweb.dev/GW-icon.png" />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Orbitron:wght@600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "GalacticWeb",
+    "url": "https://galacticweb.dev/",
+    "logo": "https://galacticweb.dev/GW-icon.png",
+    "description": "GalacticWeb designs and builds custom web applications, from React front-ends to Spring Boot back-ends and cloud deployment.",
+    "email": "matheeshask7@gmail.com",
+    "sameAs": ["https://github.com/MatheeshaKoralegedara", "https://www.linkedin.com/in/matheesha-koralegedara"]
+  }
+  </script>
 </head>
 <body>
-  <div class="bg-gradient"></div>
-  <div class="stars"></div>
-
   <header>
     <div class="container header-inner">
       <a href="#home" class="brand" aria-label="GalacticWeb home">
-        <div class="logo"><img src="image2.jpg" alt="GalacticWeb logo"></div>
-        <div class="brand-text">
-          <h1>GalacticWeb</h1>
-          <p>A futuristic web-app studio</p>
-        </div>
+        <img src="GW-icon.png" alt="GalacticWeb logo" class="brand-mark">
+        <span class="brand-text">
+          <span class="brand-name">Galactic Web</span>
+          <span class="brand-tag">Web app development studio</span>
+        </span>
       </a>
 
-      <div class="header-right">
-       
-
-        <div class="menu-toggle" id="menuToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></div>
+      <div class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" role="button" tabindex="0">
+        <span></span><span></span><span></span>
       </div>
 
       <nav id="mainNav" class="nav">
-        <a class="nav-link ghost" href="#services">Services</a>
-        <a class="nav-link ghost" href="#projects">Portfolio</a>
-        <a class="nav-link ghost" href="#about">About</a>
-        <a class="cta" href="#contact">Get Started</a>
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#projects">Work</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="cta" href="#contact">Start a project</a>
       </nav>
     </div>
   </header>
@@ -44,33 +71,21 @@
     <!-- HERO -->
     <section class="hero">
       <div class="container hero-grid">
-        <div class="hero-left" data-aos="fade-right">
-          <span class="kicker">A futuristic web-app studio</span>
-          <h2>A futuristic web-app studio building <span class="highlight">next-generation online experiences</span></h2>
-          <p class="lead">We combine professional engineering and modern design to build scalable web apps, user-first interfaces, and reliable cloud deployments.</p>
+        <div class="hero-left" data-aos="fade-up">
+          <span class="kicker">Web app development studio</span>
+          <h1>We design and build web applications that businesses actually rely on.</h1>
+          <p class="lead">GalacticWeb pairs disciplined engineering with editorial-grade design to ship custom web apps, admin systems, and customer-facing products — from first prototype to production.</p>
           <div class="hero-cta">
-            <a class="cta" href="#services">Get Started</a>
-            <a class="cta" href="#projects">View Portfolio</a>
+            <a class="cta" href="#contact">Start a project</a>
+            <a class="cta-secondary" href="#projects">See our work →</a>
           </div>
-
-          
+          <p class="hero-availability">Currently taking on new projects for Q3 2026.</p>
         </div>
 
-        <div class="hero-right" data-aos="fade-left">
-          <div class="hero-logo-wrap">
-            <img src="image2.jpg" alt="GalacticWeb logo large" class="hero-logo">
-            <div class="hero-glow"></div>
-          </div>
-
-          <div class="floating-card small-metrics" aria-hidden>
-            <div class="card-3d">
-              <div class="card-inner">
-                <div class="metric"><div class="metric-value counter" data-target="na">0</div><div class="metric-label">Projects</div></div>
-                <div class="metric"><div class="metric-value counter" data-target="na">0</div><div class="metric-label">Satisfaction</div></div>
-                <div class="metric"><div class="metric-value counter" data-target="24">0</div><div class="metric-label">Support (hrs)</div></div>
-              </div>
-            </div>
-          </div>
+        <div class="hero-right" data-aos="fade-up" data-aos-delay="120">
+          <figure class="hero-frame">
+            <img src="GW BLACK.png" alt="GalacticWeb studio mark" class="hero-logo" width="220" height="220">
+          </figure>
         </div>
       </div>
     </section>
@@ -78,39 +93,165 @@
     <!-- SERVICES -->
     <section id="services" data-aos="fade-up">
       <div class="container">
-        <div class="section-header"><h2 class="section-title">Services</h2><p class="section-subtitle">What we offer — end-to-end digital solutions</p></div>
-        <div class="grid">
-          <div class="card" data-aos="zoom-in"><div class="card-content"><div class="card-icon">💻</div><h3>Custom Web Apps</h3><p>Full-stack development with React, Spring Boot, and scalable databases.</p></div></div>
-          <div class="card" data-aos="zoom-in" data-aos-delay="80"><div class="card-content"><div class="card-icon">🎨</div><h3>UI/UX Design</h3><p>Wireframes, high-fidelity prototypes, and accessible interfaces.</p></div></div>
-          <div class="card" data-aos="zoom-in" data-aos-delay="160"><div class="card-content"><div class="card-icon">⚙️</div><h3>Deployment & Cloud</h3><p>CI/CD pipelines, cloud hosting (Vercel / AWS), monitoring and scaling.</p></div></div>
-          <div class="card" data-aos="zoom-in" data-aos-delay="240"><div class="card-content"><div class="card-icon">📈</div><h3>SEO & Performance</h3><p>Speed optimization, technical SEO, and analytics setup.</p></div></div>
-          <div class="card" data-aos="zoom-in" data-aos-delay="320"><div class="card-content"><div class="card-icon">🧭</div><h3>Brand & Strategy</h3><p>Logo, brand kit, and go-to-market web strategy for startups.</p></div></div>
-          <div class="card" data-aos="zoom-in" data-aos-delay="400"><div class="card-content"><div class="card-icon">🔧</div><h3>Maintenance</h3><p>Ongoing support, security updates, and feature development.</p></div></div>
+        <div class="section-header">
+          <span class="section-kicker">01 — Services</span>
+          <h2 class="section-title">What we build</h2>
+          <p class="section-subtitle">End-to-end delivery, from a blank repo to a monitored production deployment.</p>
         </div>
+
+        <ul class="service-list">
+          <li class="service-row" data-aos="fade-up">
+            <span class="service-index">01</span>
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 6 3 12 8 18"/><polyline points="16 6 21 12 16 18"/></svg>
+            </span>
+            <span class="service-body">
+              <h3>Custom web apps</h3>
+              <p>Full-stack development with React, Spring Boot, and scalable databases — built around your actual workflows, not a template.</p>
+            </span>
+          </li>
+
+          <li class="service-row" data-aos="fade-up">
+            <span class="service-index">02</span>
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="8" height="8" rx="1"/><circle cx="17" cy="17" r="4"/></svg>
+            </span>
+            <span class="service-body">
+              <h3>UI/UX design</h3>
+              <p>Wireframes, high-fidelity prototypes, and accessible interfaces designed for the people who'll use them every day.</p>
+            </span>
+          </li>
+
+          <li class="service-row" data-aos="fade-up">
+            <span class="service-index">03</span>
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4 4 0 0 1-1-7.87A5.5 5.5 0 0 1 16.5 8h.5a4 4 0 0 1 1 7.87"/><polyline points="9 19 12 22 15 19"/><line x1="12" y1="13" x2="12" y2="22"/></svg>
+            </span>
+            <span class="service-body">
+              <h3>Deployment &amp; cloud</h3>
+              <p>CI/CD pipelines, cloud hosting on Vercel or AWS, monitoring, and scaling so launch day isn't a fire drill.</p>
+            </span>
+          </li>
+
+          <li class="service-row" data-aos="fade-up">
+            <span class="service-index">04</span>
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 6"/><polyline points="14 6 21 6 21 13"/></svg>
+            </span>
+            <span class="service-body">
+              <h3>SEO &amp; performance</h3>
+              <p>Speed optimization, technical SEO, and analytics setup so the traffic you earn actually converts.</p>
+            </span>
+          </li>
+
+          <li class="service-row" data-aos="fade-up">
+            <span class="service-index">05</span>
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polygon points="12 7 14.5 9.5 12 17 9.5 9.5 12 7"/></svg>
+            </span>
+            <span class="service-body">
+              <h3>Brand &amp; strategy</h3>
+              <p>Logo, brand kit, and go-to-market web strategy for startups that need to look as credible as they are.</p>
+            </span>
+          </li>
+
+          <li class="service-row" data-aos="fade-up">
+            <span class="service-index">06</span>
+            <span class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 1.4 0l1.6-1.6a4 4 0 0 1-5.6 5.6L4 18.4V20h1.6l8.1-8.1a4 4 0 0 1 5.6-5.6l-1.6 1.6a1 1 0 0 0 0 1.4l1.9 1.9"/></svg>
+            </span>
+            <span class="service-body">
+              <h3>Maintenance</h3>
+              <p>Ongoing support, security updates, and feature development after launch — we don't disappear at go-live.</p>
+            </span>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <!-- PORTFOLIO (PLACEHOLDER) -->
+    <!-- PORTFOLIO -->
     <section id="projects" data-aos="fade-up">
       <div class="container">
-        <div class="section-header"><h2 class="section-title">Portfolio</h2><p class="section-subtitle">GalacticWeb Our Successful Projects</p></div>
-        <div class="projects-grid">
-          <!-- Placeholder Project 1 -->
-          <div class="proj" data-aos="flip-left">
-            <div class="proj-img"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='700'><rect width='100%' height='100%' fill='%236C63FF'/><text x='50%' y='50%' fill='white' font-family='Poppins' font-size='40' text-anchor='middle' dominant-baseline='middle'>Project Placeholder 1</text></svg>" alt="Project 1"></div>
-            <div class="meta"><strong>Live Score Dashboard (Demo)</strong><p>Real-time dashboard handling WebSocket updates and analytics.</p></div>
-          </div>
+        <div class="section-header">
+          <span class="section-kicker">02 — Work</span>
+          <h2 class="section-title">Selected work</h2>
+          <p class="section-subtitle">Live, shipped projects — click through to try them or read the code.</p>
+        </div>
 
-          <!-- Placeholder Project 2 -->
-          <div class="proj" data-aos="flip-left" data-aos-delay="80">
-            <div class="proj-img"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='700'><rect width='100%' height='100%' fill='%239B5DE5'/><text x='50%' y='50%' fill='white' font-family='Poppins' font-size='40' text-anchor='middle' dominant-baseline='middle'>Project Placeholder 2</text></svg>" alt="Project 2"></div>
-            <div class="meta"><strong>Hospital Management System (Demo)</strong><p>Secure patient records, scheduling, and billing modules.</p></div>
-          </div>
+        <div class="projects-list">
+          <article class="proj">
+            <a class="proj-media proj-media-a proj-media-cover" href="https://kapruka-ai-shopping-agent-gifty.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open GIFTY — AI Shopping Assistant for Kapruka (opens in new tab)">
+              <img src="logo2.png" alt="GIFTY logo" class="proj-logo">
+            </a>
+            <div class="proj-meta">
+              <ul class="proj-stack">
+                <li>AI Agent</li><li>Conversational UI</li><li>Multilingual</li><li>E-commerce</li>
+              </ul>
+              <h3><a href="https://kapruka-ai-shopping-agent-gifty.vercel.app/" target="_blank" rel="noopener noreferrer">GIFTY — AI Shopping Assistant for Kapruka</a></h3>
+              <p>A conversational AI shopping assistant for Kapruka, Sri Lanka's e-commerce platform. Lets customers find gifts, compare products, and check out entirely through chat — supporting English, Sinhala, Tamil, and Tanglish.</p>
+              <div class="proj-links">
+                <a class="proj-link" href="https://kapruka-ai-shopping-agent-gifty.vercel.app/" target="_blank" rel="noopener noreferrer">Live site →</a>
+              </div>
+            </div>
+          </article>
 
-          <!-- Placeholder Project 3 -->
-          <div class="proj" data-aos="flip-left" data-aos-delay="160">
-            <div class="proj-img"><img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='700'><rect width='100%' height='100%' fill='%230B0E2C'/><text x='50%' y='50%' fill='%23E6E6E6' font-family='Poppins' font-size='40' text-anchor='middle' dominant-baseline='middle'>Project Placeholder 3</text></svg>" alt="Project 3"></div>
-            <div class="meta"><strong>E-commerce Platform (Demo)</strong><p>Custom storefront and inventory management for merchants.</p></div>
+          <article class="proj proj-reverse">
+            <a class="proj-media proj-media-b" href="https://expensive-tracker-gray.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open SpendWise expense tracker (opens in new tab)">
+              <img src="spendwise-icon.png" alt="SpendWise logo" class="proj-logo">
+            </a>
+            <div class="proj-meta">
+              <ul class="proj-stack">
+                <li>Java</li><li>Spring Boot</li><li>React</li><li>MySQL</li>
+              </ul>
+              <h3><a href="https://expensive-tracker-gray.vercel.app/" target="_blank" rel="noopener noreferrer">SpendWise — Expense Tracker</a></h3>
+              <p>Personal expense tracking app with category breakdowns, financial management features, and spending analytics.</p>
+              <div class="proj-links">
+                <a class="proj-link" href="https://expensive-tracker-gray.vercel.app/" target="_blank" rel="noopener noreferrer">Live site →</a>
+                <a class="proj-link" href="https://github.com/MatheeshaKoralegedara/Expensive-Tracker" target="_blank" rel="noopener noreferrer">GitHub →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="proj">
+            <a class="proj-media proj-media-c" href="https://matheesha-koralegedara-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open Matheesha Koralegedara's personal portfolio site (opens in new tab)">
+              <img src="mk1-cropped.png" alt="Matheesha Koralegedara (MK) logo" class="proj-logo">
+            </a>
+            <div class="proj-meta">
+              <ul class="proj-stack">
+                <li>React</li><li>Responsive Design</li>
+              </ul>
+              <h3><a href="https://matheesha-koralegedara-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer">Personal Portfolio</a></h3>
+              <p>A developer portfolio site with a full case-study layout — experience timeline, live GitHub stats, and project showcase.</p>
+              <div class="proj-links">
+                <a class="proj-link" href="https://matheesha-koralegedara-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer">Live site →</a>
+                <a class="proj-link" href="https://github.com/MatheeshaKoralegedara" target="_blank" rel="noopener noreferrer">GitHub →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="brand-strip" data-aos="fade-up">
+        <p class="brand-strip-label">Brand &amp; logo design for</p>
+        <div class="marquee">
+          <div class="marquee-track">
+            <img src="brand-brc.png" alt="Blue Room" class="brand-logo">
+            <img src="brand-jayani.png" alt="Jayani Online Store" class="brand-logo">
+            <img src="brand-blossom.png" alt="Blossom Aura" class="brand-logo">
+            <img src="brand-m2.png" alt="M2" class="brand-logo">
+            <img src="brand-metamathics.png" alt="eTaMathics" class="brand-logo">
+            <img src="logo2.png" alt="GIFTY" class="brand-logo">
+            <img src="spendwise-icon.png" alt="SpendWise" class="brand-logo">
+            <span class="brand-logo-chip"><img src="mk1-cropped.png" alt="Personal Portfolio (MK)" class="brand-logo"></span>
+
+            <img src="brand-brc.png" alt="" class="brand-logo" aria-hidden="true">
+            <img src="brand-jayani.png" alt="" class="brand-logo" aria-hidden="true">
+            <img src="brand-blossom.png" alt="" class="brand-logo" aria-hidden="true">
+            <img src="brand-m2.png" alt="" class="brand-logo" aria-hidden="true">
+            <img src="brand-metamathics.png" alt="" class="brand-logo" aria-hidden="true">
+            <img src="logo2.png" alt="" class="brand-logo" aria-hidden="true">
+            <img src="spendwise-icon.png" alt="" class="brand-logo" aria-hidden="true">
+            <span class="brand-logo-chip" aria-hidden="true"><img src="mk1-cropped.png" alt="" class="brand-logo"></span>
           </div>
         </div>
       </div>
@@ -118,37 +259,44 @@
 
     <!-- ABOUT -->
     <section id="about" data-aos="fade-up">
-      <div class="container">
-        <div class="section-header"><h2 class="section-title">About</h2><p class="section-subtitle">Who we are and why we build</p></div>
-        <div class="about-section about-content">
-          <div class="about-text">
-            <h3>We create the web, faster.</h3>
-            <p>GalacticWeb is a professional, tech-driven studio focused on building next-generation web apps. We combine strong engineering discipline and thoughtful design to deliver products that scale.</p>
-            <ul class="values">
-              <li><strong>Innovation</strong> — we use modern stacks and best practices.</li>
-              <li><strong>Quality</strong> — reliable code and polished UX.</li>
-              <li><strong>Integrity</strong> — transparent processes and timelines.</li>
-            </ul>
-          </div>
-
-          <div class="contact-form" id="contact">
-            <h4>Start a project</h4>
-            <p>Send a short brief and we'll reply within 48 hours.</p>
-            <form id="contactForm" novalidate>
-              <div class="form-group"><label for="cname">Name</label><input id="cname" name="name" required placeholder="Your full name"></div>
-              <div class="form-group"><label for="cemail">Email</label><input id="cemail" name="email" type="email" required placeholder="you@domain.com"></div>
-              <div class="form-group"><label for="cmsg">Message</label><textarea id="cmsg" name="message" required placeholder="Brief about project"></textarea></div>
-              <button type="submit" class="submit-btn">Send Message</button>
-            </form>
-
-            <div id="formSuccess" class="form-success" hidden>
-              <h4>Thanks — message sent!</h4>
-              <p>We'll get back within 48 hours. Meanwhile check our GitHub / LinkedIn.</p>
-              <button class="cta" id="formOk">OK</button>
+      <div class="container about-grid">
+        <div class="about-text">
+          <span class="section-kicker">03 — About</span>
+          <h2 class="section-title">We create the web, faster.</h2>
+          <p class="about-lead">GalacticWeb is a professional, tech-driven studio focused on building next-generation web apps. We combine strong engineering discipline with thoughtful design to deliver products that scale.</p>
+          <dl class="values">
+            <div class="value">
+              <dt>Innovation</dt>
+              <dd>We use modern stacks and current best practices, not whatever's fastest to ship.</dd>
             </div>
+            <div class="value">
+              <dt>Quality</dt>
+              <dd>Reliable code and polished UX — the parts users never notice because they just work.</dd>
+            </div>
+            <div class="value">
+              <dt>Integrity</dt>
+              <dd>Transparent processes, honest timelines, and no surprise scope.</dd>
+            </div>
+          </dl>
+        </div>
 
-            <div class="contact-email">Or email: <a href="mailto:matheeshask7@gmail.com">galacticweb.dev@gmail.com</a></div>
+        <div class="contact-card" id="contact">
+          <h3>Start a project</h3>
+          <p>Send a short brief and we'll reply within 48 hours.</p>
+          <form id="contactForm" novalidate>
+            <div class="form-group"><label for="cname">Name</label><input id="cname" name="name" required placeholder="Your full name" autocomplete="name"></div>
+            <div class="form-group"><label for="cemail">Email</label><input id="cemail" name="email" type="email" required placeholder="you@domain.com" autocomplete="email"></div>
+            <div class="form-group"><label for="cmsg">Message</label><textarea id="cmsg" name="message" required placeholder="Brief about your project"></textarea></div>
+            <button type="submit" class="submit-btn">Send message</button>
+          </form>
+
+          <div id="formSuccess" class="form-success" hidden>
+            <h3>Thanks — message sent</h3>
+            <p>We'll get back to you within 48 hours.</p>
+            <button class="cta-secondary" id="formOk">OK</button>
           </div>
+
+          <p class="contact-email">Or email us directly at <a href="mailto:matheeshask7@gmail.com">matheeshask7@gmail.com</a></p>
         </div>
       </div>
     </section>
@@ -156,39 +304,27 @@
     <!-- FOOTER -->
     <footer>
       <div class="container footer-grid">
-        <div class="footer-left">
-          <div class="footer-brand"><img src="image2.jpg" alt="GalacticWeb" class="footer-logo"><div><strong>GalacticWeb</strong><div class="muted">Building Digital Galaxies</div></div></div>
+        <div class="footer-brand">
+          <img src="GW-icon.png" alt="GalacticWeb logo" class="brand-mark brand-mark-small">
+          <div>
+            <strong>Galactic Web</strong>
+            <div class="muted">Building web apps that hold up.</div>
+          </div>
         </div>
-
-        <div class="footer-right">
+        <div class="footer-meta">
+          <a href="mailto:matheeshask7@gmail.com">matheeshask7@gmail.com</a>
           <div class="social-row">
-  <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">
-    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-      <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0H12v2.2h.1c.6-1.1 2.2-2.2 4.5-2.2 4.8 0 5.7 3.2 5.7 7.4V24h-5v-7.2c0-1.7 0-3.8-2.4-3.8-2.4 0-2.8 1.8-2.8 3.6V24h-5V8z"/>
-    </svg>
-  </a>
-  <a href="https://github.com" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub">
-    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-      <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.17c-3.338.724-4.033-1.416-4.033-1.416-.547-1.387-1.337-1.757-1.337-1.757-1.092-.746.084-.731.084-.731 1.205.085 1.84 1.237 1.84 1.237 1.072 1.835 2.81 1.304 3.495.997.108-.776.42-1.305.763-1.604-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.47-2.381 1.236-3.221-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.47 11.47 0 013.003-.404 11.48 11.48 0 013.003.404c2.291-1.552 3.297-1.23 3.297-1.23.654 1.653.242 2.873.118 3.176.77.84 1.236 1.911 1.236 3.221 0 4.61-2.805 5.625-5.478 5.921.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
-    </svg>
-  </a>
-  <a href="https://facebook.com" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook">
-    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-      <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24h11.495v-9.294H9.692V11.01h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.464.099 2.797.143v3.245l-1.92.001c-1.506 0-1.797.717-1.797 1.77v2.326h3.587l-.467 3.696h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.324V1.325C24 .593 23.407 0 22.675 0z"/>
-    </svg>
-  </a>
-  <a href="https://instagram.com" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">
-    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.35 3.608 1.325.975.975 1.263 2.242 1.325 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.35 2.633-1.325 3.608-.975.975-2.242 1.263-3.608 1.325-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.35-3.608-1.325-.975-.975-1.263-2.242-1.325-3.608C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.062-1.366.35-2.633 1.325-3.608.975-.975 2.242-1.263 3.608-1.325C8.416 2.175 8.796 2.163 12 2.163zm0 1.534c-3.17 0-3.548.012-4.795.07-1.047.048-1.61.218-1.983.392-.5.242-.857.534-1.237.914-.38.38-.672.737-.914 1.237-.174.373-.344.936-.392 1.983-.058 1.247-.07 1.625-.07 4.795s.012 3.548.07 4.795c.048 1.047.218 1.61.392 1.983.242.5.534.857.914 1.237.38.38.737.672 1.237.914.373.174.936.344 1.983.392 1.247.058 1.625.07 4.795.07s3.548-.012 4.795-.07c1.047-.048 1.61-.218 1.983-.392.5-.242.857-.534 1.237-.914.38-.38.672-.737.914-1.237.174-.373.344-.936.392-1.983.058-1.247.07-1.625.07-4.795s-.012-3.548-.07-4.795c-.048-1.047-.218-1.61-.392-1.983a3.533 3.533 0 00-.914-1.237 3.533 3.533 0 00-1.237-.914c-.373-.174-.936-.344-1.983-.392-1.247-.058-1.625-.07-4.795-.07zm0 3.838a5.999 5.999 0 110 12 5.999 5.999 0 010-12zm0 9.9a3.9 3.9 0 100-7.8 3.9 3.9 0 000 7.8zm6.406-10.845a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/>
-    </svg>
-  </a>
-</div>
-
+            <a href="https://www.linkedin.com/in/matheesha-koralegedara" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0H12v2.2h.1c.6-1.1 2.2-2.2 4.5-2.2 4.8 0 5.7 3.2 5.7 7.4V24h-5v-7.2c0-1.7 0-3.8-2.4-3.8-2.4 0-2.8 1.8-2.8 3.6V24h-5V8z"/></svg>
+            </a>
+            <a href="https://github.com/MatheeshaKoralegedara" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.17c-3.338.724-4.033-1.416-4.033-1.416-.547-1.387-1.337-1.757-1.337-1.757-1.092-.746.084-.731.084-.731 1.205.085 1.84 1.237 1.84 1.237 1.072 1.835 2.81 1.304 3.495.997.108-.776.42-1.305.763-1.604-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.47-2.381 1.236-3.221-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.47 11.47 0 013.003-.404 11.48 11.48 0 013.003.404c2.291-1.552 3.297-1.23 3.297-1.23.654 1.653.242 2.873.118 3.176.77.84 1.236 1.911 1.236 3.221 0 4.61-2.805 5.625-5.478 5.921.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+          </div>
+          <span>© <span id="year"></span> GalacticWeb. All rights reserved.</span>
+        </div>
       </div>
-
-      <div style="text-align:center;margin-top:18px;color:rgba(230,230,230,0.6);font-size:13px">© <span id="year"></span> All Right Reserved . GalacticWeb</div>
     </footer>
-
   </main>
 
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>

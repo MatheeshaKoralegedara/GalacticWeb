@@ -4,23 +4,24 @@ document.addEventListener('DOMContentLoaded', () => {
   // Menu toggle
   const menuToggle = document.getElementById('menuToggle');
   const mainNav = document.getElementById('mainNav');
-  menuToggle && menuToggle.addEventListener('click', () => {
-    mainNav.classList.toggle('active');
-    menuToggle.classList.toggle('open');
-  });
+  function toggleMenu() {
+    const isOpen = mainNav.classList.toggle('active');
+    menuToggle.classList.toggle('open', isOpen);
+    menuToggle.setAttribute('aria-expanded', isOpen);
+  }
+  if (menuToggle) {
+    menuToggle.addEventListener('click', toggleMenu);
+    menuToggle.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleMenu(); }
+    });
+  }
 
   // Close nav when link clicked (mobile)
   document.querySelectorAll('#mainNav a').forEach(a => a.addEventListener('click', () => {
     mainNav.classList.remove('active');
     menuToggle.classList.remove('open');
+    menuToggle.setAttribute('aria-expanded', 'false');
   }));
-
-  // Logo click scroll to top
-  const logoImg = document.querySelector('.logo img');
-  logoImg && logoImg.addEventListener('click', (e) => {
-    e.preventDefault();
-    document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
-  });
 
   // Active nav link on scroll
   const sections = document.querySelectorAll('main section[id]');
@@ -36,32 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, { threshold: 0.45 });
   sections.forEach(s => observer.observe(s));
-
-  // Counters
-  const counters = document.querySelectorAll('.counter');
-  function runCounter(el){
-    const target = +el.dataset.target;
-    const duration = 1200;
-    let start = 0;
-    const step = Math.max(1, Math.floor(target / (duration / 16)));
-    const timer = setInterval(() => {
-      start += step;
-      if (start >= target) { el.textContent = target; clearInterval(timer); }
-      else el.textContent = start;
-    }, 16);
-  }
-  const heroCard = document.querySelector('.card-inner');
-  if (heroCard) {
-    const cObs = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          document.querySelectorAll('.counter').forEach(runCounter);
-          cObs.unobserve(heroCard);
-        }
-      });
-    }, { threshold: 0.2 });
-    cObs.observe(heroCard);
-  }
 
   // Contact form (mailto fallback)
   const form = document.getElementById('contactForm');
@@ -82,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const subject = encodeURIComponent(`GalacticWeb Inquiry from ${name}`);
     const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${msg}`);
-    const mailto = `mailto:galacticweb.dev@gmail.com?subject=${subject}&body=${body}`;
+    const mailto = `mailto:matheeshask7@gmail.com?subject=${subject}&body=${body}`;
 
     setTimeout(() => { window.location.href = mailto; }, 700);
   });

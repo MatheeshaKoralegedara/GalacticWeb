@@ -1,5 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
-  if (window.AOS) AOS.init({ duration: 700, once: true });
+  // Scroll-reveal for [data-reveal] elements
+  const revealEls = document.querySelectorAll('[data-reveal]');
+  if (revealEls.length) {
+    const revealObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    revealEls.forEach(el => revealObserver.observe(el));
+  }
 
   // Menu toggle
   const menuToggle = document.getElementById('menuToggle');

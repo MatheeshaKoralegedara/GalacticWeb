@@ -143,7 +143,7 @@ section{padding:88px 0}
   text-align:center;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
   color:rgba(247,245,240,0.5);margin-bottom:24px;
 }
-.marquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.marquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
 .marquee-track{
   display:flex;align-items:center;gap:64px;width:max-content;
   animation:marquee-scroll 26s linear infinite;
